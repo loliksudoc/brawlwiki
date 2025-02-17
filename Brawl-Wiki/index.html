@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl-Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Brawl.jpg" type="image/jpeg">
+</head>
+<body>
+
+    <header>
+        <div class="banner">
+            <img src="banner.jpg" alt="meltas">
+        </div>
+    </header>
+
+<nav>
+    <button onclick="scrollToSection('characters')">Персонажи</button>
+    <button onclick="scrollToSection('founders')">Основатели Игры</button>
+    <button onclick="scrollToSection('gp-prices')">Цены на основные ГП</button>
+
+</nav>
+
+<div id="characters" class="block">
+    <h2>Персонажи</h2>
+    <div class="characters">
+        <div>
+            <img src="darryl.jpg" alt="Дэррил">
+            <button class="character-btn" onclick="showPopup('Дэррил')">Характеристики Дэррила</button>
+        </div>
+        <div>
+            <img src="stu.jpg" alt="Сту">
+            <button class="character-btn" onclick="showPopup('Сту')">Характеристики Сту</button>
+        </div>
+        <div>
+            <img src="buzz.jpg" alt="Базз">
+            <button class="character-btn" onclick="showPopup('Базз')">Характеристики Базза</button>
+        </div>
+        <div>
+            <img src="tick.jpg" alt="Тик">
+            <button class="character-btn" onclick="showPopup('Тик')">Характеристики Тика</button>
+        </div>
+        <div>
+            <img src="rico.jpg" alt="Рико">
+            <button class="character-btn" onclick="showPopup('Рико')">Характеристики Рико</button>
+        </div>
+    </div>
+</div>
+
+<div id="founders" class="block">
+    <h2>Основатели Игры</h2>
+    <div class="founders">
+        <div>
+            <img src="ilka.jpg" alt="Основатель 1">
+            <p>Илка</p>
+        </div>
+        <div>
+            <img src="petr.jpg" alt="Основатель 2">
+            <p>Петр Стурман</p>
+        </div>
+
+    </div>
+</div>
+
+<div id="gp-prices" class="block">
+    <h2>Цены на основные ГП</h2>
+    <div class="gp-prices">
+        <div>
+            <img src="bp.jpg" alt="ГП 1">
+            <p>Цена: 700руб.</p>
+        </div>
+        <div>
+            <img src="bp+.png" alt="ГП 2">
+            <p>Цена: 1100 руб.</p>
+        </div>
+        <div>
+            <img src="pass.jpg" alt="ГП 3">
+            <p>Цена: ??? руб.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="popup">
+    <div class="content">
+        <h3 id="popup-title">Характеристики Бойца</h3>
+        <p id="popup-description">Дэррил в нашей игре является чутли не самым сильным танком(сильнее него только Френк и Фэнг)
+            Характеристики:
+            Урон - в общем 4800 за тыку а так, 10х480 на 11 силе
+            Здоровье - 10600 на 11 силе
+            Супер Атака - Укатившаяся Бочка(Дэррил катиться вперед в бочке,котороя отбрасывает врагов,уменьшает наносимый ему урон и отскакивает от стен,супер может заряжаться самостоятельно)
+            Дальность - Нормальная
+            Скорость Перезарядки - Нормальная
+            Скорость движение - высокая
+            Урон от супера - 800 на 11 силе
+            Дальность Супера - большая
+            Снижение Урона Супера - 50%
+            Колличество тык ульты - 2
+            Колличество Тык - 3
+        </p>
+        <button onclick="closePopup()">Закрыть</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
